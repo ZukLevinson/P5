@@ -66,8 +66,6 @@ export default class Navbar extends Vue {
 }
 
 .router-link-exact-active {
-  color: gray;
   font-weight: bold;
-  transition: 0.15s ease-in-out;
 }
 </style>
