@@ -19,8 +19,8 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class Navbar extends Vue {
   private links: Array<object> = [
-    { url: "/", name: "Home" },
-    { url: "/about", name: "About" },
+    { url: "/", name: "Taste" },
+    { url: "/recommendations", name: "Recommendations" },
   ];
 }
 </script>
