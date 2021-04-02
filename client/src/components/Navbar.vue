@@ -46,7 +46,7 @@ export default class Navbar extends Vue {
   align-items: center;
   justify-content: center;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
   text-transform: uppercase;
 
   &:hover {

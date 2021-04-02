@@ -116,6 +116,10 @@ a {
   margin-right: 1em;
 }
 
+[text-center]{
+  text-align: center;
+}
+
 h1 {
   margin: 3px;
   line-height: 0.8em;
