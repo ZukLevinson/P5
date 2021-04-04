@@ -1,6 +1,11 @@
 <template>
-  <div class="page">
-    <sliding-boxes />
+  <div class="page" flex-column>
+    <sliding-boxes
+      v-for="index in 10"
+      :key="index"
+      :location="index"
+      :forward="index % 2 == 0"
+    />
   </div>
 </template>
 
@@ -15,3 +20,10 @@ import SlidingBoxes from "../components/SlidingBoxes.vue";
 })
 export default class Home extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+.page {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+</style>

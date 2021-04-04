@@ -53,9 +53,22 @@ a {
   width: 100%;
 }
 
+[fill-height] {
+  height: 100%;
+}
+
 [flex-row] {
   display: flex;
   flex-direction: row;
+
+  & > * {
+    flex: 1 1 auto;
+  }
+}
+
+[flex-column] {
+  display: flex;
+  flex-direction: column;
 
   & > * {
     flex: 1 1 auto;
@@ -112,12 +125,15 @@ a {
   padding: 0.3em;
 }
 
-[mr3] {
+[mg3] {
   margin-right: 1em;
 }
 
-[text-center]{
+[text-center] {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
