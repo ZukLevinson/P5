@@ -59,7 +59,6 @@ export default class SlidingBoxes extends Vue {
         scroller.prepend(last);
       }, length);
     } else {
-      console.log(123);
       setInterval(() => {
         const scroller = document.getElementById(`scroller-${this.location}`);
         let first = scroller.firstChild;
@@ -73,8 +72,7 @@ export default class SlidingBoxes extends Vue {
 <style lang="scss">
 .slider {
   width: 100%;
-  overflow: hidden;
-  // max-height: 50px;
+  overflow-x: hidden;
 
   & .graphic-container {
     width: 2130px;
